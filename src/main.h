@@ -23,6 +23,7 @@
 
 enum _controller_enum {
   NO_CONTROLLER = 0,
+  Radioberry_V2,
   CONTROLLER1,
   CONTROLLER2_V1,
   CONTROLLER2_V2,

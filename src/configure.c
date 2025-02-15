@@ -69,6 +69,7 @@ void configure_gpio(GtkWidget *parent) {
 
   switch (controller) {
   case NO_CONTROLLER:
+  case Radioberry_V2:
   case G2_V2:
     max_encoders = 0;
     break;
@@ -194,6 +195,7 @@ void configure_gpio(GtkWidget *parent) {
 
   switch (controller) {
   case NO_CONTROLLER:
+  case Radioberry-v2:
   case G2_V2:
     max_switches = 0;
     break;

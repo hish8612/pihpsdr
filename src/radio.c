@@ -1451,6 +1451,12 @@ void radio_start_radio() {
     display_toolbar = 1;
     break;
 
+  case Radioberry_V2:
+    display_zoompan = 1;
+    display_sliders = 1;
+    display_toolbar = 1;
+    break;
+
   case CONTROLLER2_V1:
   case CONTROLLER2_V2:
   case G2_FRONTPANEL:

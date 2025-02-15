@@ -528,6 +528,7 @@ void discovery() {
   gpio_set_defaults(controller);
   GtkWidget *gpio = gtk_combo_box_text_new();
   gtk_combo_box_text_append(GTK_COMBO_BOX_TEXT(gpio), NULL, "No Controller");
+  gtk_combo_box_text_append(GTK_COMBO_BOX_TEXT(gpio), NULL, "Radioberry V2");
   gtk_combo_box_text_append(GTK_COMBO_BOX_TEXT(gpio), NULL, "Controller1");
   gtk_combo_box_text_append(GTK_COMBO_BOX_TEXT(gpio), NULL, "Controller2 V1");
   gtk_combo_box_text_append(GTK_COMBO_BOX_TEXT(gpio), NULL, "Controller2 V2");

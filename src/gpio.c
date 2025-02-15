@@ -809,6 +809,7 @@ void gpio_default_encoder_actions(int ctrlr) {
 
   switch (ctrlr) {
   case NO_CONTROLLER:
+  case Radioberry_V2:
   case G2_V2:
   default:
     default_encoders = NULL;
@@ -848,6 +849,7 @@ void gpio_default_switch_actions(int ctrlr) {
 
   switch (ctrlr) {
   case NO_CONTROLLER:
+  case Radioberry_V2:
   case CONTROLLER1:
   case G2_V2:
   default:
@@ -964,6 +966,20 @@ void gpio_set_defaults(int ctrlr) {
     switches = my_switches;
     break;
 
+  case Radioberry_V2:
+    //
+    CWL_LINE = 17;
+    CWR_LINE = 21;
+    CWKEY_LINE = -1;
+    PTTIN_LINE = -1;
+    PTTOUT_LINE = -1;
+    CWOUT_LINE = -1;
+    memcpy(my_encoders, encoders_no_controller, sizeof(my_encoders));
+    memcpy(my_switches, switches_no_controller, sizeof(my_switches));
+    encoders = my_encoders;
+    switches = my_switches;
+    break;
+  
   case NO_CONTROLLER:
   default:
     //

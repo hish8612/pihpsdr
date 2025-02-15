@@ -99,6 +99,10 @@ void encoder_menu(GtkWidget *parent) {
     snprintf(title, 64, "piHPSDR - No Encoders");
     break;
 
+  case Radioberry_V2:
+    snprintf(title, 64, "piHPSDR - No Encoders");
+    break;
+
   case CONTROLLER1:
     snprintf(title, 64, "piHPSDR - Controller 1 Encoder Actions");
     break;
@@ -152,6 +156,10 @@ void encoder_menu(GtkWidget *parent) {
 
   switch (controller) {
   case NO_CONTROLLER:
+    // should never happen
+    break;
+
+  case Radioberry_V2:
     // should never happen
     break;
 
